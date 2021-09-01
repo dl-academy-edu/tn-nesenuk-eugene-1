@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*{
+	font-family: 'Crimson Text', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+.container {
+    max width: 1180px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.unlisting {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* NAVIGATION */
+
+.logo{
+	position: absolute;
+	margin: 50 auto auto 110;
+ 
+}
+
+.nav {
+	font-family: Open Sans;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 50 0 0 110;
+	z-index: 101
+}
+
+.nav a{
+	color: #000000;
+	text-decoration: none;
+	display: inline;
+
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+} 
+
+.nav li {
+	margin-right: 20px;
+	display: inline;
+
+}
+
+.nav li:hover {
+	opacity:0.5;
+}
+
+.nav li:active {
+	opacity:0.1;
+}
+
+
+
+.button{
+    background: #000000;
+    color: #ffffff;
+    size: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+}
+
+/* BANNER */
+
+.main-banner {
+    background-image: url('../img/banner.png');
+    background-color: #EEE4DB
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background: url('../img/banner.png') #EEE4DB no-repeat center;
+}
+
+.main-banner .container {
+    padding: 100px 0 200px;
+}
+
+.main-banner-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1E0606;
+    max-width: 70%;
+}
+
+.banner-button {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 360px;
+}
