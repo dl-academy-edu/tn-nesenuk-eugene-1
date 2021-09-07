@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Catalog page</title>
+    <title>Contact us</title>
 </head>
 <body>
     <header>
@@ -22,62 +22,58 @@
         </nav>
     </header>
     <main>
-        <section class="category">
-            <h1>Category Products</h1>
+        <section class="Contact  Us">
+            <h1>Contact  Us</h1>
             <a href="#">Home</a>
-            <div>Catalog</div>          
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category1.png" alt="" width="280" height="270">
-                        <h3>APPAREL KIDS</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category2.png" alt="" width="280" height="270">
-                        <h3>HOLIDAY SHOP</h3>
-                    </a>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category3.png" alt="" width="280" height="270">
-                        <h3>TOYS</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category4.png" alt="" width="280" height="270">
-                        <h3>ACCESSORIES</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category5.png" alt="" width="280" height="270">
-                        <h3>SALE</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/category/category6.png" alt="" width="280" height="270">
-                        <h3>APPAREL ADULTS</h3>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="description">
-            <h2>Product Description</h2>
-            <p>
-                Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.
-            </p>
-            <p>
-                A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.
-            </p>
-            <p>
-                The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.
-            </p>
+            <div>Contact us</div>
+            <form name="user" method="POST" action="/">
+                <fieldset>
+                <div>
+                  <label for="user-name">Name</label>
+                  <input id="user-name"
+                         name="name"
+                         placeholder=""
+                         type="text">
+                </div>
+                </fieldset>
+        
+                <fieldset>
+                <div>
+                  <label for="user-phone">Phone</label>
+                    <input id="user-phone"
+                         name="phone"
+                         placeholder=""
+                         type="number">
+                </div>
+                <div>
+                  <label for="user-email">Email</label>
+                  <input id="user-email"
+                         name="email"
+                         placeholder=""
+                         type="email">
+                </div>
+                </fieldset>
+        
+                <fieldset>
+                <div>
+                    <label for="user-message">Message</label>
+                    <textarea name="/" id="user-message" cols="60" rows="15"></textarea>
+                </div>
+                </fieldset>
+        
+                <fieldset>
+                  <div>
+                        <input type="checkbox" id="personal-data">
+                        <label for="personal-data">clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="button">Submit</button>
+            </form>
+            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p>An expert is waiting to help you!</p>
         </section>
     </main>
-
     <footer>
         <div>Navigation</div>
         <ul class="unlisting">
@@ -154,5 +150,5 @@
         <p>Copyright © 2018 Dlk • Design Life Kids</p>
         <a href="#">Web Design — Direct Line Development</a>
     </footer>
-</body>
-</html>
+            </body>
+            </html>

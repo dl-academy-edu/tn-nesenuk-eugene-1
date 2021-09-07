@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* BANNER */
+
+.main-banner {
+    background-image: url('../img/banner.png');
+    background-color: #EEE4DB;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background: url('../img/banner.png') #EEE4DB no-repeat center;
+}
+
+.main-banner .container {
+    padding: 100px 0 200px;
+}
+
+.main-banner-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1E0606;
+    max-width: 70%;
+}
+
+.banner-button {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 360px;
+}

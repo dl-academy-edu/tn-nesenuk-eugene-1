@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*{
+	font-family: 'Open Sans', sans-serif; 
+}
+
+
+.container {
+    max width: 1180px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.unlisting {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* NAVIGATION */
+
+
+
+.nav {
+    margin: 50px 0 0 110px;
+}
+
+.nav {
+	font-family: Open Sans;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav a{
+    display:flex;
+    color: #1E0606;
+    text-align: center;
+    padding: 20px 60px;
+    text-decoration: none;
+
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+} 
+
+
+.nav li:hover {
+	opacity:0.5;
+}
+
+.nav li:active {
+	opacity:0.1;
+}
+
+.button{
+    background: #000000;
+    color: #ffffff;
+    size: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+}
+
