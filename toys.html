@@ -28,14 +28,17 @@
             <a href="#">Catalog</a>
             <div>Toys</div>
         </section>
-        <fieldset>
-                <h2>Cost</h2>
-                <input type="range" id="cost" name="cost"
-                 min="0" max="500" value="70">
-                 <div>
-                 <span>0</span>
-                 <span>500</span>
-                </div>
+        <aside>
+        <div>
+            <h2>Cost</h2>
+            <input type="range" id="cost" name="cost"
+            min="0" max="500" value="70">
+            <div>
+                <span>0</span>
+                <span>500</span>
+            </div>
+        </div>
+        <div>
               <h2>Color</h2>
               <ul>
                 <li>
@@ -71,6 +74,8 @@
                     </label>
                   </li>
               </ul>
+        </div>
+        <div>
               <h2>Delivery</h2>
               <ul>
                 <li>
@@ -90,13 +95,16 @@
                     </label>
                   </li>
               </ul>
+        </div>
+        <div>
               <h2>Amount</h2>
               <br>
             <button type="button">0-5</button>
             <button type="button">10-20</button>
             <button type="button">20-50</button>
             <button type="button">Apply</button>
-        </fieldset>
+        </div>
+        </aside>
 
         <ul>
             <li>
@@ -174,12 +182,9 @@
             <div>Connect</div>
             <form name="email" method="POST" action="/">
                 <label for="email"></label>
-                <input id="email"
-                       name="email"
-                       placeholder="Email"
-                       type="email">
+                <input id="email" name="email" placeholder="Email" type="email">
+                <button type="submit" class="button">Join</button>
             </form>
-            <button type="submit" class="button">Join</button>
             <ul class="unlisting">
                 <li>
                     <a href="#">
