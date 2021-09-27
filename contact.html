@@ -26,59 +26,54 @@
         </a>
         <a href="contact.html" class="header-contact">Contact Us</a>
     </header>
-    <main>
-        <section class="Contact  Us">
-            <h1>Contact  Us</h1>
+    <main class="container">
+        <section class="contacts">
+            <h1 class="contact-title">Contact  Us</h1>
             <a href="#">Home</a>
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z" fill="#1E0606"/>
+                </svg>                
             <div>Contact us</div>
-            <form name="user" method="POST" action="/">
+            <form action="#" method="POST" class="contact-form">
                 <fieldset>
-                <div>
-                  <label for="user-name">Name</label>
-                  <input id="user-name"
-                         name="name"
-                         placeholder=""
-                         type="text">
-                </div>
+                    <div class="label-wrapper">
+                        <label for="input-name" class="contact-label">Name</label>
+                        <input type="text" id="input-name" placeholder="Ivan Ivanov" class="contact-input">
+                    </div>
                 </fieldset>
         
-                <fieldset>
-                <div>
-                  <label for="user-phone">Phone</label>
-                    <input id="user-phone"
-                         name="phone"
-                         placeholder=""
-                         type="number">
-                </div>
-                <div>
-                  <label for="user-email">Email</label>
-                  <input id="user-email"
-                         name="email"
-                         placeholder=""
-                         type="email">
-                </div>
+                <fieldset class="field-2-column">
+                    <div class="label-wrapper">
+                        <label for="input-phone" class="contact-label">Phone</label>
+                        <input type="number" id="input-phone" class="contact-input">
+                    </div>
+                    <div>
+                        <label class="label-wrapper contact-label">
+                            E-mail
+                            <input type="email" required class="contact-input">
+                        </label>
+                    </div>
                 </fieldset>
         
-                <fieldset>
-                <div>
-                    <label for="user-message">Message</label>
-                    <textarea name="/" id="user-message" cols="60" rows="15"></textarea>
-                </div>
+                <fieldset class="label-wrapper">
+                    <label for="textarea">Message</label>
+                    <textarea name="#" id="textarea" cols="60" rows="15"></textarea>
                 </fieldset>
         
                 <fieldset>
                   <div>
                         <input type="checkbox" id="personal-data">
-                        <label for="personal-data">clicking on the button, you consent to the processing of your personal data</label>
+                        <label for="personal-data">By clicking on the button, you consent to the processing of your personal data</label>
                     </div>
                 </fieldset>
                 <button type="submit" class="button">Submit</button>
             </form>
-            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-            <p>An expert is waiting to help you!</p>
+            <div>Our support team are on-hand to assist with any issues you are experiencing.</div>
+            <div>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</div>
+            <div>An expert is waiting to help you!</div>
         </section>
     </main>
+
     <footer>
         <div class="footer-top">
         <div class="footer-section">
@@ -107,9 +102,9 @@
 
         <div class="footer-section">
         <div class="footer-heading">Connect</div>
-        <form name="email" method="POST" action="/">
+        <form name="email" method="POST" action="#">
             <label for="email"></label>
-            <input id="email" name="email" placeholder="Email" type="email">
+            <input id="email" name="email" placeholder="Email" type="email"  class="form-mail">
             <button type="submit" class="button">Join</button>
         </form>
         <ul class="unlisting networks">
@@ -153,13 +148,11 @@
         </div>
         </div>
         <div class="footer-bottom">
-        <div class="rating-footer">Company Rating</div>
-        <ul class="unlisting rating-stars">
+        <div class="rating">Company Rating</div>
+        <ul class="unlisting stars">
             <li><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
-                    fill="white" />
-            </svg></li>
+                <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
+                </svg></li>
             <li><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"
@@ -181,7 +174,7 @@
                     fill="white" />
             </svg></li>
         </ul>
-            <div>Copyright © 2018 Dlk • Design Life Kids</div>
+            <div class="footer-copyright">Copyright © 2018 Dlk • Design Life Kids</div>
             <a href="#">Web Design — Direct Line Development</a>
         </div>
     </footer>

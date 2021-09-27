@@ -1,0 +1,17 @@
+.contact-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 49px;
+    text-transform: uppercase;
+    text-align: start;
+    color: #1E0606;
+}
+
+.contact-form {
+    max-width: 680px;
+    width: 100%;
+    background:#E5EAF8EE;
+    margin: 0 auto 65px;
+    padding: 50px 40px;
+}
