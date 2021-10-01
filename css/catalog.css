@@ -1,0 +1,58 @@
+.catalog-link {
+    position: relative;
+}
+
+.catalog-link-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    margin: 0;
+}
+
+.catalog-list-top {
+    display: flex;
+}
+
+.catalog-list-top > li {
+    margin-right: 20px;
+}
+
+
+.catalog-list-bottom {
+    display: flex;
+    margin-top: 23px;
+    margin-left: 200px;
+}
+
+.catalog-list-bottom > li {
+    margin-right: 20px;
+}
+
+.description {
+    width: 680px;
+    margin-left: 200px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.description-title {
+    font-family: 'Montserrat';
+    color: #1E0606;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.description p{
+    margin-top: 15px;
+}

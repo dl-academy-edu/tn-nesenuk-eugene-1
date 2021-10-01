@@ -274,37 +274,36 @@
         </div>
     </footer>
 
-    <form name="user" method="POST" action="/">
+    <form action="#" method="POST" class="contact-form container">
         <fieldset>
-            <div>
-                <label for="user-name">Name</label>
-                <input id="user-name" name="name" placeholder="" type="text">
+            <div class="label-wrapper">
+                <label for="input-name" class="contact-label">Name</label>
+                <input type="text" id="input-name" placeholder="Ivan Ivanov" class="contact-input">
             </div>
         </fieldset>
 
-        <fieldset>
-            <div>
-                <label for="user-phone">Phone</label>
-                <input id="user-phone" name="phone" placeholder="" type="number">
+        <fieldset class="field-2-column">
+            <div class="label-wrapper">
+                <label for="input-phone" class="contact-label">Phone</label>
+                <input type="number" id="input-phone" class="contact-input">
             </div>
             <div>
-                <label for="user-email">Email</label>
-                <input id="user-email" name="email" placeholder="" type="email">
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div>
-                <label for="user-message">Message</label>
-                <textarea name="/" id="user-message" cols="60" rows="15"></textarea>
+                <label class="label-wrapper contact-label">
+                    E-mail
+                    <input type="email" required class="contact-input">
+                </label>
             </div>
         </fieldset>
 
+        <fieldset class="label-wrapper">
+            <label for="textarea">Message</label>
+            <textarea name="#" id="textarea" cols="60" rows="15"></textarea>
+        </fieldset>
+
         <fieldset>
-            <div>
+          <div>
                 <input type="checkbox" id="personal-data">
-                <label for="personal-data">clicking on the button, you consent to the processing of your personal
-                    data</label>
+                <label for="personal-data">By clicking on the button, you consent to the processing of your personal data</label>
             </div>
         </fieldset>
         <button type="submit" class="button">Submit</button>
