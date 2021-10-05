@@ -94,7 +94,10 @@ a {
     border: none;
     padding: 9px 22px;
     cursor: pointer;
-    display: inline-block;
+    display: block;
+    text-align: center;
+    max-width: 106px;
+    width: 100%;
 }
 
 .heading-h1 {
@@ -140,19 +143,23 @@ footer {
     background-color: #434344;
     margin: auto;
     max-width: 1400px;
+    padding: 100px 110px;
+}
+
+.footer-top-line {
+    width: 380px;
+    height: 1px;
+    background-color: #666666;
+    margin-top: 23px;
+    margin-bottom: 28px;
 }
 
 .footer-heading {
     color: #AAAAAA;
-    margin-bottom: 52px;
-    
-
 }
 
 .footer-top {
     display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
 }
 
 .footer-top a:hover{
@@ -164,7 +171,8 @@ footer {
 }
 
 .footer-section {
-    max-width: 380px;
+    width: 380px;
+    margin-right: 20px;
 }
 
 .footer-section a{
@@ -209,17 +217,22 @@ footer {
 .footer-bottom {
     display: flex;
     color: #FFFFFF;
-    margin-top: 52px;
-    padding-bottom: 100px;
+    margin-top: 28px;
+    width: 1180px;
+    height: 1px;
+    background-color: #666666;
 }
 
-
-.rating {
-    margin-left: 130px;
-    margin-right: 25px;
+.footer-bottom-heading {
+    display: flex;
+    margin-top: 23px;
+    width: 380px;
+    margin-right: 20px;
 }
+
 
 .stars {
+    margin-left: 25px;
     display: flex;
     cursor: pointer;
 }
@@ -228,11 +241,11 @@ footer {
     margin-right: 10px;
 }
 
-.stars li:hover > svg * {
+.rating :hover > svg * {
     fill: #C29974;
 }
 
-.stars li:active > svg * {
+.rating :active > svg * {
     fill: #C29974;
    
 }
@@ -246,14 +259,9 @@ footer {
 }
 
 
-.footer-copyright {
-margin-left: 151px;
-}
-
 
 .footer-bottom a{
     color: #A2A2A2;
-    margin-left: 142px;
 }
 
 .footer-bottom a:hover {
@@ -267,7 +275,12 @@ margin-left: 151px;
     color: #666666;
 }
 
-
+.contact-form {
+    max-width: 680px;
+    width: 100%;
+    background:#E5EAF8EE;
+    padding: 42px 40px;
+}
 
 fieldset {
     border: none;
@@ -277,14 +290,14 @@ fieldset {
 label,
 legend {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 25px;
     color: #6B6A6A;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 input,
 textarea {
-    border: 1px solid #C7C1C1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     height: 50px;
     padding-top: 14px;
@@ -309,7 +322,7 @@ textarea {
 
 .field-2-column {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .field-2-column .label-wrapper {
@@ -317,12 +330,16 @@ textarea {
     width: 100%;
 }
 
+.field-2-column input{
+    width: 290px;
+}
+
 
 .label-wrapper {
     display: flex;
     flex-direction: column;
-
 }
+
 
 .checkbox-list,
 .radio-list {

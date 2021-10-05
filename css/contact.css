@@ -1,7 +1,21 @@
-.contact-form {
-    max-width: 680px;
-    width: 100%;
-    background:#E5EAF8EE;
-    margin: 0 auto 65px;
-    padding: 50px 40px;
+.contact-us {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contact-message {
+    margin-left: 120px;
+}
+
+.contact-informing {
+    margin-bottom: 20px;
+}
+
+.contact-help {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
 }
