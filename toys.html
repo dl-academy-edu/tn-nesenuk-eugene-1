@@ -16,7 +16,7 @@
         <img class="logo" src="images/logo.png" alt="logo" width="100" height="52">
         <nav class="nav">
             <ul class="unlisting nav-list">
-                <li><a href="#" class="nav-link">Blog</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
@@ -24,12 +24,11 @@
         <a class="header-search">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3651 3.26001C10.9451 3.26001 8.16509 6.08001 8.16509 9.52001C8.16509 10.98 8.6651 12.3 9.4851 13.38L3.6051 19.32C3.2651 19.68 3.2651 20.24 3.6051 20.58C3.7851 20.76 4.0051 20.84 4.2251 20.84C4.4651 20.84 4.6851 20.76 4.8651 20.58L10.7451 14.62C11.7651 15.36 13.0051 15.78 14.3451 15.78C17.7651 15.78 20.5451 12.96 20.5451 9.52001C20.5651 6.06001 17.7851 3.26001 14.3651 3.26001ZM14.3651 14.2C11.8251 14.2 9.76509 12.1 9.76509 9.52001C9.76509 6.94001 11.8251 4.84001 14.3651 4.84001C16.9051 4.84001 18.9651 6.94001 18.9651 9.52001C18.9651 12.1 16.9051 14.2 14.3651 14.2ZM17.4651 9.60001C17.4251 9.94001 17.1251 10.2 16.7851 10.2C16.7451 10.2 16.7251 10.2 16.6851 10.2C16.3051 10.14 16.0451 9.80001 16.0851 9.42001C16.2251 8.38001 15.0651 7.84001 15.0051 7.82001C14.6651 7.66001 14.5051 7.24001 14.6651 6.90001C14.8251 6.56001 15.2251 6.40001 15.5851 6.54001C15.6651 6.56001 17.7451 7.52001 17.4651 9.60001ZM16.0051 11.12C16.1451 11.26 16.2451 11.48 16.2451 11.68C16.2451 11.9 16.1651 12.1 16.0051 12.24C15.8651 12.38 15.6451 12.48 15.4451 12.48C15.2451 12.48 15.0251 12.4 14.8851 12.24C14.7451 12.1 14.6451 11.88 14.6451 11.68C14.6451 11.48 14.7251 11.26 14.8851 11.12C15.0251 10.98 15.2451 10.88 15.4451 10.88C15.6451 10.88 15.8451 10.96 16.0051 11.12Z" fill="#1E0606" /></svg>
         </a>
-        <a href="contact.html" class="header-contact">Contact Us</a>
-        
-        
+        <a href="contact.html" class="header-contact">Contact Us</a>   
     </header>
+
     <main>
-        <section class="toys">
+        <section class="toys container">
             <h1 class="heading-h1">Toy for kids</h1>
             <div class="breadcrumbs">
                 <a href="index.html">Home</a>
@@ -44,129 +43,102 @@
                 </span>
                 <span>Toys</span>
             </div>
-            
         </section>
-        <aside>
-        <div>
-            <h2>Cost</h2>
-            <div class="cost-stroke"></div>
-            <div class="cost-circle"></div>
-            <div>
-                <span>0</span>
-                <span>500</span>
-            </div>
-        </div>
-        <div>
-              <h2>Color</h2>
-              <ul>
+        <section class="cost">
+        <div class="container gapcost">
+            <ul class="unlisting list-item">
                 <li>
-                    <label>
-                      <input name="black"
-                             type="checkbox"
-                             value="black">
-                          Black
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input name="blue"
-                             type="checkbox"
-                             value="blue">
-                          Blue
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input name="green"
-                             type="checkbox"
-                             value="green">
-                          Green
-                    </label>
-                  </li>
-                  <li>
-                    <label>
-                      <input name="white"
-                             type="checkbox"
-                             value="white">
-                          White
-                    </label>
-                  </li>
-              </ul>
-        </div>
-        <div>
-              <h2>Delivery</h2>
-              <ul>
-                <li>
-                  <label>
-                    <input name="delivery"
-                           type="radio"
-                           value="free shipping">
-                        Free shipping
-                  </label>
+                    <h2 class="list">Cost</h2>
                 </li>
                 <li>
-                    <label>
-                      <input name="delivery"
-                             type="radio"
-                             value="Fast shipping">
-                            Fast shipping
-                    </label>
-                  </li>
-              </ul>
+                    <input type="range" min="0" max="500" value="0" id="range" class="slider">
+                </li>
+                <li class="slider-number">
+                <p class="number">0</p>
+                <p class="number">500</p>
+                </li>
+            </ul>
+              <ul class="unlisting color list-item">
+                <li><h2 class="list">Color</h2></li>
+                <li>
+                    <label><input name="black" type="checkbox" value="black">Black</label>
+                </li>
+                <li>
+                    <label><input name="blue" type="checkbox" value="blue">Blue</label>
+                </li>
+                <li>
+                    <label><input name="green" type="checkbox" value="green">Green</label>
+                  
+                </li>
+                <li>
+                    <label><input name="white" type="checkbox" value="white">White</label>
+                </li>
+            </ul>
+            <ul class="unlisting list-item">
+                <li><h2 class="list">Delivery</h2></li>
+                <li>
+                    <label><input name="delivery" type="radio" value="free shipping">Free shipping</label>
+                </li>
+                <li>
+                    <label><input name="delivery" type="radio" value="Fast shipping">Fast shipping</label>
+                </li>
+            </ul>
+            <ul class="unlisting list-item">
+                <li><h2 class="list">Amount</h2></li>
+                <li>
+                    <div class="inputs">
+                      <div class="input-wrapper">
+                        <input class="input" type="radio" name="amount" id="one">
+                        <label class="label" for="one">0-10</label>
+                      </div>
+                      <div class="input-wrapper">
+                        <input class="input" type="radio" name="amount" id="two">
+                        <label class="label" for="two">10-20</label>
+                      </div>
+                      <div class="input-wrapper">
+                        <input class="input" type="radio" name="amount" id="three">
+                        <label class="label" for="three">20-50</label>
+                      </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div>
-              <h2>Amount</h2>
-            <button type="button" class="amount-button active">0-5</button>
-            <button type="button">10-20</button>
-            <button type="button">20-50</button>
-            <button type="button">Apply</button>
+        </section>
 
-            <input name="delivery"
-                           type="radio"
-                           value="free shipping">
-                           10-20
-                  </label>
-        </div>
-        </aside>
-
-        <ul>
-            <li>
-                <a href="#">
+        <ul class="unlisting container product-list">
+            <li><a href="#">
                     <img src="images/toys/toys1.png" alt="" width="380" height="385">
                     <p>SHARKY BEAN BAG CHAIR COVER</p>
                     <p>$60.00 USD</p>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <img src="images/toys/toys2.png" alt="" width="380" height="385">
                     <p>BRASS DECO FRAMES</p>
                     <p>$66.00 USD</p>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <img src="images/toys/toys3.png" alt="" width="380" height="385">
                     <p>CIBO FULL APRON</p>
                     <p>$60.00 USD</p>
                 </a>
             </li>
-            <li>
-                <a href="#">
+        </ul>
+        <ul class="unlisting container product-list">
+            <li><a href="#">
                     <img src="images/toys/toys4.png" alt="" width="380" height="385">
                     <p>GATCHA GATCHA GUMBALL MACHINE</p>
                     <p>$56.00 USD</p>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <img src="images/toys/toys5.png" alt="" width="380" height="385">
                     <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
                     <p>$29.00 USD</p>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <img src="images/toys/toys6.png" alt="" width="380" height="382">
                     <p>TANGLE SPINNING TEA LIGHT</p>
                     <p>$56.00 USD</p>
@@ -174,11 +146,11 @@
             </li>
         </ul>
 
-            <div class="row pagination">
-            <span>1</span>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+            <div class="row pagination container">
+                <span>1</span>
+                <span><a href="#">2</a></span>
+                <span><a href="#">3</a></span>
+                <span><a href="#">4</a></span>
             </div>
         </main>
         <footer>
